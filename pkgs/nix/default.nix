@@ -1,7 +1,5 @@
 {
   pkgs,
-  inputs,
-  system,
   ...
 }: {
   devShells.nix-nil = pkgs.mkShell {
@@ -13,8 +11,6 @@
 
       nil
       alejandra
-
-      inputs.agenix.packages.${system}.default
     ];
     NIX_CONFIG = "extra-experimental-features = nix-command flakes repl-flake";
     DIRENV_LOG_FORMAT = "";
