@@ -2,7 +2,7 @@
   pkgs,
   ...
 }: {
-  devShells.nix-nil = pkgs.mkShell {
+  devShells.git-bash = pkgs.mkShell {
     name = "git-bash";
     packages = with pkgs; [
       bash
