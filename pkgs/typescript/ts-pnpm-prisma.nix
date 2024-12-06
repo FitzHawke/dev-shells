@@ -5,7 +5,7 @@
       nodePackages.pnpm
       nodePackages.typescript
       nodePackages.typescript-language-server
-      nodejs
+      nodePackages_latest.nodejs
       openssl
     ];
     NIX_CONFIG = "extra-experimental-features = nix-command flakes";
