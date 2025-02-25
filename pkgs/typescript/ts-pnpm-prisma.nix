@@ -2,9 +2,9 @@
   devShells.ts-pnpm-prisma = pkgs.mkShell {
     name = "ts-pnpm-prisma";
     packages = with pkgs; [
-      nodePackages.pnpm
-      nodePackages.typescript
-      nodePackages.typescript-language-server
+      pnpm
+      typescript
+      typescript-language-server
       nodePackages_latest.nodejs
       openssl
     ];

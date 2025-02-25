@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   devShells.nix-nil = pkgs.mkShell {
     name = "nix-nil";
     packages = with pkgs; [
@@ -12,7 +9,7 @@
       nil
       alejandra
     ];
-    NIX_CONFIG = "extra-experimental-features = nix-command flakes repl-flake";
+    NIX_CONFIG = "extra-experimental-features = nix-command flakes";
     DIRENV_LOG_FORMAT = "";
   };
 }
