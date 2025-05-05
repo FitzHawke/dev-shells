@@ -3,6 +3,7 @@
     ./bash
     ./nix
     ./python
+    ./rust
     ./typescript
   ];
 }

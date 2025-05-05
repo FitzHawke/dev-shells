@@ -1,6 +1,6 @@
 {pkgs, ...}: {
-  devShells.rust = pkgs.mkShell {
-    name = "rust";
+  devShells.rust-base = pkgs.mkShell {
+    name = "rust-base";
     packages = with pkgs; [
       rust-bin.stable.latest.default
     ];
